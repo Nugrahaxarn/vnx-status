@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-09-19T00:00:00.000Z",
+  "items": [
+    { "key": "instagram", "nama": "Instagram", "status": "unknown", "note": "Menunggu pengecekan pertama." },
+    { "key": "tiktok", "nama": "TikTok", "status": "unknown", "note": "Menunggu pengecekan pertama." },
+    { "key": "facebook", "nama": "Facebook", "status": "unknown", "note": "Menunggu pengecekan pertama." },
+    { "key": "youtube", "nama": "YouTube", "status": "unknown", "note": "Menunggu pengecekan pertama." },
+    { "key": "twitter_x", "nama": "Twitter / X", "status": "unknown", "note": "Menunggu pengecekan pertama." },
+    { "key": "telegram", "nama": "Telegram", "status": "unknown", "note": "Menunggu pengecekan pertama." },
+    { "key": "whatsapp", "nama": "WhatsApp", "status": "unknown", "note": "Menunggu pengecekan pertama." },
+    { "key": "threads", "nama": "Threads", "status": "unknown", "note": "Menunggu pengecekan pertama." },
+    { "key": "payment", "nama": "Payment", "status": "unknown", "note": "URL belum dikonfigurasi. Set secret \"PAYMENT_STATUS_URL\" di GitHub Actions." },
+    { "key": "notif_wa", "nama": "Notifikasi WA", "status": "unknown", "note": "URL belum dikonfigurasi. Set secret \"NOTIF_WA_STATUS_URL\" di GitHub Actions." }
+  ]
+}
