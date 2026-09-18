@@ -1,0 +1,39 @@
+name: Check Service Status
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # tiap 5 menit (jadwal GitHub bisa sedikit terlambat)
+  workflow_dispatch: {}       # tombol "Run workflow" manual di tab Actions
+
+permissions:
+  contents: write
+
+jobs:
+  check-status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Jalankan pengecekan status
+        env:
+          PAYMENT_STATUS_URL: ${{ secrets.PAYMENT_STATUS_URL }}
+          NOTIF_WA_STATUS_URL: ${{ secrets.NOTIF_WA_STATUS_URL }}
+        run: node check-status.mjs
+
+      - name: Commit & push status.json jika berubah
+        run: |
+          git config user.name "vnx-status-bot"
+          git config user.email "actions@github.com"
+          git add status.json
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan, skip commit."
+          else
+            git commit -m "chore: update status.json [skip ci]"
+            git push
+          fi
