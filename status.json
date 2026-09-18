@@ -1,60 +1,60 @@
 {
-  "generatedAt": "2026-09-18T20:23:34.426Z",
+  "generatedAt": "2026-09-18T22:32:05.199Z",
   "items": [
     {
       "key": "instagram",
       "nama": "Instagram",
       "status": "normal",
-      "responseMs": 298,
+      "responseMs": 232,
       "note": "HTTP 200"
     },
     {
       "key": "tiktok",
       "nama": "TikTok",
       "status": "normal",
-      "responseMs": 252,
+      "responseMs": 250,
       "note": "HTTP 200"
     },
     {
       "key": "facebook",
       "nama": "Facebook",
       "status": "normal",
-      "responseMs": 153,
+      "responseMs": 99,
       "note": "HTTP 200"
     },
     {
       "key": "youtube",
       "nama": "YouTube",
       "status": "normal",
-      "responseMs": 118,
+      "responseMs": 140,
       "note": "HTTP 200"
     },
     {
       "key": "twitter_x",
       "nama": "Twitter / X",
       "status": "normal",
-      "responseMs": 279,
+      "responseMs": 144,
       "note": "HTTP 200"
     },
     {
       "key": "telegram",
       "nama": "Telegram",
       "status": "normal",
-      "responseMs": 518,
+      "responseMs": 347,
       "note": "HTTP 200"
     },
     {
       "key": "whatsapp",
       "nama": "WhatsApp",
       "status": "normal",
-      "responseMs": 98,
+      "responseMs": 67,
       "note": "HTTP 200"
     },
     {
       "key": "threads",
       "nama": "Threads",
       "status": "normal",
-      "responseMs": 278,
+      "responseMs": 354,
       "note": "HTTP 200"
     },
     {
